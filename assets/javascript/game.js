@@ -20,11 +20,20 @@ var yourGuessesText = document.getElementById("yourguesses-text");
     // var to return win increment
 
     var userGuess = event.key;
+    var isLetter = false;
 
     // generate random character by computer.
     var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
 
-      if(guessesLeft != 0){
+    for (i=0;i<computerChoices.length;i++) {
+      if (userGuess==computerChoices[i]) {
+        isLetter=true;
+        break;
+      }
+    }
+
+    if(isLetter) {
+          // i=computerChoices.length;
 
         if(userGuess === computerGuess) {
             wins++;
@@ -44,6 +53,7 @@ var yourGuessesText = document.getElementById("yourguesses-text");
         }
 
 
+
         // Display the user and computer guesses, and wins/losses/ties.
         winsText.textContent = "wins: " + wins;
         lossesText.textContent = "losses: " + losses;
@@ -51,4 +61,5 @@ var yourGuessesText = document.getElementById("yourguesses-text");
         yourGuessesText.textContent = "Your Guesses so far: "+ guessedChar.toString();
 
       }
+
     }
