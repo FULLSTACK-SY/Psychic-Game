@@ -53,7 +53,6 @@ var yourGuessesText = document.getElementById("yourguesses-text");
         }
 
 
-
         // Display the user and computer guesses, and wins/losses/ties.
         winsText.textContent = "wins: " + wins;
         lossesText.textContent = "losses: " + losses;
