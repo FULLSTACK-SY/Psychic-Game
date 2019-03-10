@@ -7,18 +7,18 @@ When the Key is presses by user, store it in a variable.
 Generate random character by computer.
 
 if  user's guess = computer guess
-			increment win by one
-			reset guesses left to 9
-			make guessed craracter array empty
+			increment win by one,
+			reset guesses left to 9,
+			make guessed craracter array empty.
 
 if  user's guess <> computer guess
-			increment win by one
-			guesses left- reduce by 1
-			store and show guessed character
+			increment win by one,
+			guesses left- reduce by 1,
+			store and show guessed character.
 
 if  guesses left =0
-			increment losses by one
-			reset guesses left to 9
-			make guessed craracter array empty
- 
+			increment losses by one,
+			reset guesses left to 9,
+			make guessed character array empty.
+
 Display the user and computer guesses, and wins/losses/ties.
